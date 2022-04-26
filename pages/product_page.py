@@ -2,8 +2,6 @@ from .base_page import BasePage
 from .locators import LoginPageLocators
 from .locators import ProductPageLocators
 
-link = "http://selenium1py.pythonanywhere.com/catalogue/the-shellcoders-handbook_209/?promo=newYear"
-
 class ProductPage(BasePage):
     def add_to_basket(self):
         assert self.is_element_present(*ProductPageLocators.ADD_BUTTON), "Button is not presented"
